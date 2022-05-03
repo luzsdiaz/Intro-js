@@ -1,0 +1,49 @@
+/*
+function Sum (a,b) {
+    var total = a + b;
+    return "la suma es: " + total;
+}
+
+Sum(2, 2)
+*/
+
+
+
+
+
+//Ejemplo de funtion
+//Una funcion engloba un procedimiento en especifico para una tarea a realizar
+//Crear una funcion que reciba una lista de numeros y un numero a buscar y que retorne en que posicion se encuentra el elemento a buscar.
+
+const list = [1, 2, 3, 4, 5, 6, 7]
+
+// parametros: lista de numero y un numero
+
+function findNumber (array, number) {
+    for (let i = 0; i < array.length; i++) {
+       if(array[i] == number) {
+        return i
+        }
+    }
+}
+ const x = findNumber(list, 4)
+ console.log(x)
+
+
+
+
+ // arrow function
+
+ const list = [1, 2, 3, 4, 5, 6, 7]
+
+ const findNumber = (array, number) => {
+
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] == number) {
+         return i
+         }
+     }
+ }
+
+  console.log(findNumber(list, 4))
+
