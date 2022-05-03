@@ -1,8 +1,8 @@
 
 const arreglo = [];
-let i = 1;
-while(i<=5){
-    arreglo.push(i);
-    i++;
+let contador = 1;
+while(contador<=5){
+    arreglo.push(contador);
+    contador++;
 }
 document.write(arreglo+", ");
