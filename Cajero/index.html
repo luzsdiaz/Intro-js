@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automatico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <!--Codigo botones de la pantalla que nos daran las opciones retiro, ingresar y consultar -->
+    <div class="container">
+        <div class="row">
+        <div class="col display">
+            <div class="cal-logo">ATM</div>
+            <div class="massage"><p id="msg2"></p>
+                <p id="msg">Ingresa tu numero de cuenta</p></div>
+                <div class="menu" id="menu">
+                    <input type="button" value="Retiro" onclick="withdraw()" >
+                    <input type="button" value="Ingresar" onclick="credit()" >
+                    <input type="button" value="Consulta" onclick="consult()" >
+                    <input type="button" value="Salir" onclick="exit()">
+                </div> 
+      
+     
+    
+        <div id="consult2">
+            <p id="msg3">
+                <span id="saldo"><b>El saldo de tu cuenta es </b></span> <br>
+                <span id="main-balance">$10</span> <br>
+                <span id="credit">credit</span> <br>
+                <span id="debit">debit</span>
+
+            </p>
+        </div>
+        <input type="button" value="&#8635;" onclick="captcha()" id="captcha">     
+        <input type="button" value="Back" onclick="menuback()" id="menuback">     
+        </div>
+
+
+    <!--Codigo para la creacion del teclado del cajero ATM -->
+        
+        <div class="col calculator">
+            <form class="cal-body" name="forms" id="forms">
+                <input type="text" class="cal-display" name="answer" id="textview" disabled>
+                <div class="cal-button">
+                    <input type="button" value="1" onclick="forms.answer.value += '1'"   id="btn1" class="btn">
+                    <input type="button" value="2" onclick="forms.answer.value += '2'"   id="btn2" class="btn">
+                    <input type="button" value="3" onclick="forms.answer.value += '3'"   id="btn3" class="btn">
+                    <input type="button" value="4" onclick="forms.answer.value += '4'"   id="btn4" class="btn">
+                    <input type="button" value="5" onclick="forms.answer.value += '5'"   id="btn5" class="btn">
+                    <input type="button" value="6" onclick="forms.answer.value += '6'"   id="btn6" class="btn">
+                    <input type="button" value="7" onclick="forms.answer.value += '7'"   id="btn7" class="btn">
+                    <input type="button" value="8" onclick="forms.answer.value += '8'"   id="btn8" class="btn">
+                    <input type="button" value="9" onclick="forms.answer.value += '9'"   id="btn9" class="btn">
+                    <input type="button" value="0" onclick="forms.answer.value += '0'"   id="btn10" class="btn">
+                    <input type="button" value="." onclick="forms.answer.value += '.'"   id="btn11" class="btn">
+                    <input type="button" value="Borrar" onclick="back()"   id="btnCancelar" class="btn cancelar">
+                    <input value="Reset" onclick="forms.answer.value=delete(forms.answer.value)"   id="btnreset" type="reset" class="btn reset">
+                    <input type="button" value="Continuar" onclick="cardcheck()"   id="btnproced" class="btn continuar">
+
+                </div>
+            </form>
+        </div>
+        </div>
+    </div> 
+
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
