@@ -22,7 +22,33 @@ function cardcheck(){
         if(textv==1111)
         {
             document.getElementById('msg').style.color="green";
-            document.getElementById('msg2').innerHTML="Numero de cuenta correcto";
+            document.getElementById('msg2').innerHTML="BIENVENIDO MALI";
+            document.getElementById('msg').innerHTML="Ingresa tu contraseña";
+            document.getElementById('textview').value="";
+            document.getElementById('btnproced').setAttribute("onclick","passcheck()");
+        }
+        else{
+            document.getElementById('msg').innerHTML="Numero de cuenta incorrecto";
+            document.getElementById('msg').style.color="red";
+            
+        }
+        if(textv==1112)
+        {
+            document.getElementById('msg').style.color="green";
+            document.getElementById('msg2').innerHTML="BIENVENIDO GERA";
+            document.getElementById('msg').innerHTML="Ingresa tu contraseña";
+            document.getElementById('textview').value="";
+            document.getElementById('btnproced').setAttribute("onclick","passcheck()");
+        }
+        else{
+            document.getElementById('msg').innerHTML="Numero de cuenta incorrecto";
+            document.getElementById('msg').style.color="red";
+            
+        }
+        if(textv==1113)
+        {
+            document.getElementById('msg').style.color="green";
+            document.getElementById('msg2').innerHTML="BIENVENIDO MARIU";
             document.getElementById('msg').innerHTML="Ingresa tu contraseña";
             document.getElementById('textview').value="";
             document.getElementById('btnproced').setAttribute("onclick","passcheck()");
